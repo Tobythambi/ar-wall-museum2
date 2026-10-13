@@ -81,7 +81,7 @@
   <div id="status">Point your camera at the wall.</div>
 </div>
 
-<div id="badge">MindAR · 8 pictures</div>
+<div id="badge">MindAR · 11 pictures</div>
 
 <div id="foundBanner" style="opacity:0;"><span id="foundBannerText">Target found</span></div>
 
@@ -101,7 +101,7 @@
   import * as THREE from "three";
   import { MindARThree } from "mindar-image-three";
 
-  const TARGET_MIND_URL = "./targets.mind"; // all 8 pictures, compiled together, in order 01-08
+  const TARGET_MIND_URL = "./targets.mind"; // all 11 pictures, compiled together, in order 01-11
 
   // One entry per picture, in the SAME order the photos were compiled into targets.mind.
   // Photo NN <-> media/NN.mp4. "aspect" = photo width / height, so the video fills the photo exactly.
@@ -114,6 +114,9 @@
     { index: 5, videoUrl: "./media/06.mp4", aspect: 578/355 }, // 06: fighter aircraft with ground crew
     { index: 6, videoUrl: "./media/07.mp4", aspect: 715/472 }, // 07: ferry "Seberang" on the water
     { index: 7, videoUrl: "./media/08.mp4", aspect: 768/967 }, // 08: two men walking through a covered gangway
+    { index: 8, videoUrl: "./media/09.mp4", aspect: 447/683 }, // 09: charcoal portrait of a man welcoming visitors
+    { index: 9, videoUrl: "./media/10.mp4", aspect: 643/394 }, // 10: greeting on the ferry deck
+    { index: 10, videoUrl: "./media/11.mp4", aspect: 496/397 }, // 11: ceremonial parade under an umbrella
   ];
 
   const loadingEl = document.getElementById('loading');
